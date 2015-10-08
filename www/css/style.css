@@ -1,0 +1,23 @@
+body{
+    background-image:  url("../img/worldmap3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.mysignin {
+    background-color: #3f51b5;
+    color: #fff;
+    font-size: 18px;
+    padding: 9px 13px 11px 10px;
+}
+.mybox {
+    padding: 0 !important;
+}
+.mybtn{
+    float:right;
+}
+.logo {
+    
+   text-align:center;
+    
+}

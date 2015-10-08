@@ -1,0 +1,47 @@
+<ion-view>
+    <ion-content>
+
+  
+
+  <div class="center-block w-xxl w-auto-xs p-v-md">
+    <div class="navbar">
+      <div class="navbar-brand m-t-lg text-center">
+       
+      </div>
+    </div>
+
+    <div class="p-lg panel md-whiteframe-z1 text-color m mybox">
+      <div class="m-b text-sm mysignin">
+        Sign in 
+      </div>
+        
+        <div class="logo ">
+            <img  src="img/logo-nuovo.png" alt=""/>
+          </div>
+        <div class="text-color m">
+           
+
+      <form name="form">
+       
+        <div class="md-form-group float-label">
+          <input type="text" class="md-input" ng-model="user.username" required>
+          <label>Select a user</label>
+        </div>
+          
+        <div class="md-form-group float-label">
+          <input type="password" class="md-input" ng-model="user.password" required>
+          <label>Password</label>
+        </div>      
+
+
+        <button md-ink-ripple type="submit" class="md-btn md-raised indigo btn-block p-h-md" ng-click="submit()">Sign in</button>
+      </form>
+        </div>
+    </div>
+
+  </div>
+
+
+
+    </ion-content>
+</ion-view>
