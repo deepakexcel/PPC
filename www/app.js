@@ -5,7 +5,10 @@ angular.module('PCC', [
     'ionic',
     'PCC.login',
     'PCC.view2',
-   'ajaxservice'
+   'ajaxservice',
+   'ui.select',
+   'ngMaterial'
+ 
 
 ])
         .run(function ($ionicPlatform) {

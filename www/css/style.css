@@ -19,5 +19,149 @@ body{
 .logo {
     
    text-align:center;
+   }
+.mypass {
+    margin-top: 11px;
+}
+.md-input {
+    -moz-border-bottom-colors: none !important;
+    -moz-border-left-colors: none !important;
+    -moz-border-right-colors: none !important;
+    -moz-border-top-colors: none !important;
+    background: transparent none repeat scroll 0 0 !important;
+    border-color: -moz-use-text-color -moz-use-text-color rgba(160, 160, 160, 0.2)  !important;
+    border-image: none !important;
+    border-radius: 0 !important;
+    border-style: none none solid !important;
+    border-width: 0 0 1px  !important;
+    box-shadow: none !important;
+    color: inherit !important;
+    height: 34px !important;
+    padding: 2px !important;
+    position: relative !important;
+    width: 100% !important;
+    z-index: 5 !important;
+}
+.md-input:focus{
+    border-bottom-width:2px !important;
+    padding-bottom:1px !important;
+    border-color:#3f51b5 !important;
+}
+/*.footer1{
+    position:absolute;
+    bottom:3px; 
+    z-index:100;
+    height:44px;
+    width:100%;
+    background-color:black;
+}
+.footer2{
+    position:absolute;
+    bottom:0px;
+    z-index:100;
+    height:3px;
+    width:100%;
+    background-color:#97C37C;
+}
+.leftfooter {
+    color: #fff;
+    float: left;
+    font-size: 1.3em;
+    margin: 1%;
+}
+.rightfooter {
+    color: #fff;
+    float: right;
+    font-size: 1.3em;
+    margin: 1%;
+}*/
+.myicon{
+       padding-left: 5px;
+}
+
+/*.myclass{
+    background-color: black;
+    color:#fff;
+}*/
+.headercolor{
+ background-color:black;   
+}
+.headerleft{
+    color:#fff;
+     padding: 5px 0 0 12px;
+      font-size: 1.3em;
+
+}
+.headerright{
+    color:#fff;
+     padding: 5px 12px 0 0;
+      font-size: 1.3em;
+
+}
+.mreport{
+    padding-left:5px;
+}
+.buttons.headerright1 {
+    color: #fff;
+}
+.bleft {
+    font-size: 24px;
+    padding: 0 20px 0 0;
+}
+.bright {
+    font-size: 24px;
+    padding: 0px 20px 0 0;
+}
+i.search {
+     font-size: 1.3em;
+
+    padding: 5px 20px 0 0;
+}
+i.icon.ion-android-sync.refresh {
+    font-size: 24px;
+    padding: 0 20px 0 0;
+}
+.option {
+    font-size: 24px;
+    padding: 0 24px 0 0;
+}
+.myview2 {
+    margin-bottom: 0;
     
+    margin-top: 36px !important;
+    width: 80%;
+}
+.subview {
+     color: #fff;
+    font-size: 1.2em;
+}
+.shiping{
+    float:left;
+     padding-left:5px;
+}
+.agent{
+   text-align:right;
+   padding-right:5px;
+}
+.middlediv {
+    font-size: 1.3em;
+    font-weight: 600;
+    border-bottom:1px solid gray;
+}
+.data.ng-binding {
+    float: left;
+}
+.ETA.ng-binding {
+    text-align: right;
+}
+.bottomdiv{
+    font-size:1em;
+       margin-top: 5px;
+}
+.base{
+    float:left;
+    
+}
+.report{
+    text-align:right;
 }
