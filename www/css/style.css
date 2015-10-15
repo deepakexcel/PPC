@@ -1,9 +1,12 @@
-body{
+/*body{
     background-image:  url("../img/worldmap3.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 
-}
+}*/
+
+
+
 .mysignin {
     background-color: #3f51b5;
     color: #fff;
@@ -17,9 +20,9 @@ body{
     float:right;
 }
 .logo {
-    
-   text-align:center;
-   }
+
+    text-align:center;
+}
 .mypass {
     margin-top: 11px;
 }
@@ -76,7 +79,7 @@ body{
     margin: 1%;
 }*/
 .myicon{
-       padding-left: 5px;
+    padding-left: 5px;
 }
 
 /*.myclass{
@@ -84,18 +87,19 @@ body{
     color:#fff;
 }*/
 .headercolor{
- background-color:black;   
+    background-color:black;   
 }
 .headerleft{
     color:#fff;
-     padding: 5px 0 0 12px;
-      font-size: 1.3em;
+    padding:  5px 0 0 75px;
+    font-size: 1.3em;
+
 
 }
 .headerright{
     color:#fff;
-     padding: 5px 12px 0 0;
-      font-size: 1.3em;
+    padding: 5px 12px 0 0;
+    font-size: 1.3em;
 
 }
 .mreport{
@@ -113,9 +117,8 @@ body{
     padding: 0px 20px 0 0;
 }
 i.search {
-     font-size: 1.3em;
-
-    padding: 5px 20px 0 0;
+  font-size: 1.8em;
+    padding:0px 20px 0 0;
 }
 i.icon.ion-android-sync.refresh {
     font-size: 24px;
@@ -127,25 +130,29 @@ i.icon.ion-android-sync.refresh {
 }
 .myview2 {
     margin-bottom: 0;
-    
+
     margin-top: 36px !important;
     width: 80%;
 }
 .subview {
-     color: #fff;
+    color: #fff;
     font-size: 1.2em;
 }
 .shiping{
     float:left;
-     padding-left:5px;
+    padding-left:5px;
+    width:50%;
 }
 .agent{
-   text-align:right;
-   padding-right:5px;
+    text-align:right;
+    padding-right:5px;
 }
 .middlediv {
     font-size: 1.3em;
+    float: left;
+    font-size: 1.3em;
     font-weight: 600;
+    width: 100%;
     border-bottom:1px solid gray;
 }
 .data.ng-binding {
@@ -156,12 +163,373 @@ i.icon.ion-android-sync.refresh {
 }
 .bottomdiv{
     font-size:1em;
-       margin-top: 5px;
+    margin-top: 5px;
 }
 .base{
     float:left;
-    
+    width:50%;
+
 }
 .report{
     text-align:right;
+}
+ion-view.pane {
+    background-image: url("../img/worldmap3.jpg");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.space{
+    padding-left:5px;
+}
+.data{
+    width:72%;
+    float:left;
+}
+i.manifest {
+    font-size: 1.3em;
+
+    padding-top:5px;
+}
+.bleft.page3 {
+    margin: -3px;
+}
+i.space.page3.ng-binding {
+    font-style: italic;
+}
+i.space.page2.ng-binding {
+    font-style: italic;
+}
+.color {
+    background-color: black;
+    min-height: 43px !important;
+}
+.buttonclr{
+    color:#fff;
+}
+.fonts{
+    font-size:1.2em !important;
+}
+.topdiv {
+    font-size: 1.4em !important;
+    font-weight: 600;
+    width: 94%;
+    margin: 0 auto;
+    padding: 8px 0px 8px 0;
+}
+.blno {
+    /*    float: left;
+        width: 25%;*/
+    text-align:left;
+}
+
+.consignee {
+    /*    float: left;
+        width: 36%;
+        padding-left: 13%;*/
+    text-align:center
+}
+.quantitymanifested {
+    text-align: right;
+    width: 70%;
+}
+.backcolor {
+    background-color: #003d64;
+    color: #fff;
+    padding: 0 0 8px;
+}
+
+.backcolor1 {
+    background-color: #fcfcdd;
+    box-shadow: 0px 1px 0px 0px #C9CAC4;
+}
+.consignee1{
+    /*    float:left;
+        width:40%;*/
+    text-align: center;
+}
+.topdiv1 {
+    font-size: 1.2em !important;
+    font-weight: 600;
+    width: 94%;
+    margin: 0 auto;
+    padding: 8px 0px 7px 0;
+}
+.line12 {
+    background-color: #fff;
+    margin: -14px 0 0;
+    padding: 0.5px;
+    width:94%;
+    margin-left:3%;
+}
+.mybox2{
+    box-shadow: 0px 1px 0px 0px #DAD7D7;
+    padding: 0 0 8px 0;
+}
+.data1 {
+    font-size: 1em;
+    font-weight: 600;
+    width: 125px;
+    float: left;
+}
+.adreess {
+    width: 90%;
+    padding-left: 125px;
+}
+.middlediv1 {
+    width: 94%;
+    margin: 0 auto;
+    margin-top: 5px;
+
+}
+.mybtm{
+    font-style: italic;
+}
+.bottom1{
+    float:left;
+}
+.bottom2{
+    float:right;
+}
+.bottomdiv1{
+    width:94%;
+    margin:0 auto;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+img.ab {
+    width: 43px;
+    padding: 4px 01 0 0;
+    margin: 11px 0 0 -6px;
+}
+.popup{
+    width:400px !important;
+}
+.popup-head {
+    padding:0px !important;   
+}
+.popup-body{
+    padding:0px !important;   
+}
+.mypopup {
+    font-size: 1.4em;
+    opacity: 0.5;
+    padding: 5px 0px 8px 15px;
+    box-shadow: 0px 0px 1px 1px #BDBBBB;
+}
+.mid {
+    margin: 8px 15px 0 15px;
+}
+.btn1 {
+    width: 100%;
+    text-align: center;
+    margin-top: 8px;
+}
+.btn2 {
+    text-align: right;
+}
+.mypad{
+        border-radius: 5px;
+    padding: 8px 0px 28px 6px;  
+}
+.iconside {
+    float: right;
+    padding: 0 4px 0 5px;
+    font-size: 30px;
+}
+.consignee__2 {
+    float: left;
+    width: 45%;
+    text-align: right;
+}
+i.makebtn {
+    background-color: #003d64;
+    color: #fff;
+    font-size: 1.3em;
+    padding: 7px 10px 9px 10px;
+    border-radius: 4px;
+    
+}
+i.makebtn1 {
+    background-color: #fcfcdd;
+    color: #black;
+    font-size: 1.2em;
+    padding: 7px 10px 9px 10px;
+    border-radius: 4px;
+    border:1px solid #AFACAC;
+    font-style:italic;
+}
+.consignee__3 {
+    float: left;
+    width: 55%;
+    padding-left:14px;
+}
+.clear1{
+    clear:both;
+}
+.full {
+    margin: 14px 0 0 0;
+}
+.consignee__1 {
+    margin: 0 0 22px 0;
+}
+.form-validation .form-control.ng-dirty.ng-invalid {
+    border-color: #f44336 !important;
+}
+input[type="text"], input[type="password"],input[type="number"]{
+    border: 1px solid #ccc;
+    
+}
+.full1 {
+    width: 94%;
+    margin: 0 auto;
+}
+.myselect {
+    padding: 0px 0px 10px 0px;
+    height: 45px;
+}
+.col-25.mylabel {
+    text-align: right;
+    padding: 6px 12px 0 0;
+}
+.md-select-label{
+        min-width: 150px !important;
+}
+i.myactivity {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.row.myrow12 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.col-75.mycol {
+    padding: 0 0 0 15px;
+}
+.mypicture{
+    text-align:right;
+    padding-right:10px;
+}
+.ax{
+  
+    min-width: 150px;
+
+}
+.MYASSIGN{
+     text-align:right;
+    padding-right:10px;
+}
+.myarea{
+   margin-left:20% !important   ;
+}
+.mm{
+    margin-left:66%;
+    ;
+}
+.mycbm{
+    text-align:right;
+}
+.myicon{
+    padding: 0 8px 0 0;
+}
+.btnab1{
+    width:138px !important;
+}
+.btnab2{
+    width:144px !important;
+}
+/*===================================================media =======================================*/
+@media screen and (max-width: 450px) {
+    .headerleft{
+        font-size: 1em !important;
+
+    }
+    .headerright{
+        padding: 5px 12px 0 0 !important ;
+        font-size: 1em !important;
+    }
+
+    .bleft {
+        font-size: 18px !important;
+        padding: 2px 16px 0 0 !important;
+    }
+    .bright {
+        font-size: 18px !important;
+        padding: 2px 13px 0 0 !important;
+    }
+    i.search {
+        font-size: 1.6em !important;
+        padding: 0  px 13px 0 0 !important;
+    }
+    i.icon.ion-android-sync.refresh {
+        font-size: 24px;
+        padding: 0 13px 0 0 !important;
+    }
+
+}
+@media (min-width: 300px){
+    .app-aside.md-sidenav-left {
+        min-width: 0;
+        -webkit-transform: translate3d(0,0,0)!important;
+        transform: translate3d(0,0,0)!important;
+    }
+}
+@media (min-width: 300px){
+    .app-aside.folded {
+        width: 64px;
+    }
+}
+@media (min-width: 300px){
+    .folded {
+        z-index: 60;
+        -webkit-transition: width .4s cubic-bezier(0.25,0.8,0.25,1);
+        transition: width .4s cubic-bezier(0.25,0.8,0.25,1);
+    }
+}
+@media (min-width: 300px){
+    .app-aside {
+        display: block!important;
+        width: 240px;
+    }
+}
+@media (min-width: 300px){
+    .folded:hover, .folded:focus, .folded.active {
+        width: 240px; 
+        font-size:1em !important;
+    }
+}
+@media (min-width: 300px){
+    .folded .nav li a .icon, .folded .nav li .nav-item .icon {
+        float: none;
+        min-width: 0;
+        margin-right: 0;
+        line-height: 50px;
+    }
+}
+@media (min-width: 300px){
+    .folded .hidden-folded {
+        display: none;
+    }
+
+}
+@media (min-width:300px){
+    .folded:hover .hidden-folded, .folded:focus .hidden-folded, .folded.active .hidden-folded {
+        display: inherit;
+
+    }
+
+}
+@media (min-width:300px) and (max-width:992px){
+    /*.folded .font-normal  {
+        font-size:0px !important;
+    }
+    .folded .badge{
+            font-size:0px !important;
+    }*/
+    .folded{
+        font-size:0px !important;
+    }
+
+
 }

@@ -4,10 +4,13 @@
 angular.module('PCC', [
     'ionic',
     'PCC.login',
-    'PCC.view2',
-   'ajaxservice',
-   'ui.select',
-   'ngMaterial'
+    'PCC.Report',
+    'PCC.bill',
+    'ajaxservice',
+    'ui.select',
+    'ngMaterial',
+    'PCC.measurement'
+    
  
 
 ])
@@ -17,18 +20,27 @@ angular.module('PCC', [
             });
         }).
         config(function ($stateProvider, $urlRouterProvider) {
-             $urlRouterProvider.otherwise('login');
+             $urlRouterProvider.otherwise('/login');
             $stateProvider
                     .state('login', {
                         url: "/login",
-                        templateUrl: "login/login.html",
+                        templateUrl: "login_page/login.html",
                         controller: "PCC.LoginCtrl"
                     })
-                    .state('view2', {
-                        url: "/view2",
-                        templateUrl: "view2/view2.html",
-                        controller: 'View2Ctrl'
+                    .state('Report', {
+                        url: "/Report",
+                        templateUrl: "Report_page/Report.html",
+                        controller: 'PCC.ReportCtrl'
+                    }).state('bill_lading', {
+                        url: "/bill_ladding/:manifest_no/:MV",
+                        templateUrl: "bill_lading_page/bill_lading.html",
+                        controller: 'PCC.BillCtrl'
+                    }).state('measurement', {
+                        url: "/measurement/:bl_number/:MV",
+                        templateUrl: "measurement_page/measurement.html",
+                        controller: 'PCC.measureCtrl'
                     });
+
 
 
            

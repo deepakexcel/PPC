@@ -1,0 +1,41 @@
+{  
+    "display_data":[{
+           "agent":"Africa Port Services",
+           "shipping_line":"SAFMARINE MPV",
+           "base":"Feadrel Ocean Terminal (FOT)",
+           "report_status":"Created",
+           "main_data":"SHAFMARINE SAHARA",
+           "manifest_type":"Import",
+            "manifest_no":"MF15000334",
+           "ETA":"20.04.2015",
+           "created_at":"",
+           "updated_at":""
+           
+   },{
+           "agent":"Red Transport",
+           "shipping_line":"UNIVERSAL AFRICA LINES",
+           "base":"Feadrel Lighter Terminal (FLT)",
+           "report_status":"Processing",
+           "main_data":"UAL GABON",
+           "manifest_type":"Shifting",
+           "manifest_no":"MF15000374",
+           "ETA":"18.02.2015",
+           "created_at":"",
+           "updated_at":""
+           
+   },{
+           "agent":"MGM",
+           "shipping_line":"MGM lines",
+           "base":"Feadrel Lighter Terminal (FLT)",
+           "report_status":"Captured",
+           "main_data":"KOTA BERKAT",
+           "manifest_type":"Export",
+           "manifest_no":"MF15000443",
+           "ETA":"15.02.2015",
+           "created_at":"",
+           "updated_at":""
+         
+   }
+        
+    ]
+}

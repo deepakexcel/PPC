@@ -1,0 +1,29 @@
+
+          <div class="mypopup">
+             Search For Manifest/Vessel 
+             <i class="icon mdi-content-clear i-20 iconside" ng-click="closepopup()"></i>
+          </div>
+  <div class="mid">
+ <form name="form">
+            <ui-select ng-model="person.selected" theme="bootstrap" >
+              <ui-select-match class="mypad" placeholder="Manifest Numner/Vessel Name" >{{$select.selected.user_name}}</ui-select-match>
+              <ui-select-choices repeat="item in people | filter: $select.search">
+                <div ng-bind-html="item.user_name | highlight: $select.search"></div>
+                <!--<small ng-bind-html="item.email | highlight: $select.search"></small>-->
+              </ui-select-choices>
+            </ui-select>
+    
+<div class="btn1">
+<button md-ink-ripple="" class="md-btn md-raised m-b btn-fw indigo">Search<div class="md-ripple-container"></div></button>
+        <!--<button md-ink-ripple type="submit" class="md-btn md-raised indigo btn-block p-h-md" ng-click="submit()">Sign in</button>-->
+</div> 
+<!--     <div class="btn2">
+<button md-ink-ripple="" class="md-btn md-raised m-b  grey-800" ng-click="closepopup()">Close<div class="md-ripple-container"></div></button>
+        <button md-ink-ripple type="submit" class="md-btn md-raised indigo btn-block p-h-md" ng-click="submit()">Sign in</button>
+</div> -->
+ </form>
+  </div>    
+
+
+
+

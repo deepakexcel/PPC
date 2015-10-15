@@ -1,0 +1,537 @@
+
+<ion-view class="background">
+    <md-backdrop ng-show="showdata" ng-click="backdrop()" class="md-sidenav-backdrop md-opaque ng-scope md-default-theme myback"></md-backdrop>
+    <md-sidenav ng-click="showback()" md-component-id="aside" ui-view="aside@" ng-class="{'folded': app.setting.asideFolded || $state.current.data.folded}" class="app-aside md-sidenav-left md-closed ng-scope ng-isolate-scope folded" id="aside" tabindex="-1"><div class="box bg-white ng-scope">
+  <div ng-class="$state.current.data.theme ? $state.current.data.theme.primary : app.setting.theme.primary" class="navbar md-whiteframe-z1 no-radius indigo">
+      
+      
+      <!-- brand -->
+      <a class="navbar-brand">
+        <svg style="
+              width: 24px; height: 24px;" xml:space="preserve" enable-background="new 0 0 100 100" viewBox="0 0 100 100" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <path fill="rgba(139, 195, 74, 0.5)" d="M 50 0 L 100 14 L 92 80 Z"/>
+            <path fill="rgba(139, 195, 74, 0.8)" d="M 92 80 L 50 0 L 50 100 Z"/>
+            <path fill="#f3f3f3" d="M 8 80 L 50 0 L 50 100 Z"/>
+            <path fill="rgba(220, 220, 220, 0.6)" d="M 50 0 L 8 80 L 0 14 Z"/>
+          </svg>
+        <img style="max-height: 36px; display:none" alt="." src="">
+        <!--<span class="hidden-folded m-l inline ng-binding">Materil</span>-->
+      </a>
+      <!-- / brand -->
+  </div>
+  <div class="box-row">
+    <div class="box-cell scrollable hover">
+      <div class="box-inner">
+        <div  ng-class="$state.current.data.theme ? $state.current.data.theme.primary+'-50' : app.setting.theme.primary+'-50'" class="p hidden-folded indigo-50">
+          <div class="rounded w-64 bg-white inline pos-rlt">
+            <img class="img-responsive rounded" src="">
+          </div>
+          <a target="#nav, #account" ui-toggle-class="hide, show" class="block m-t-sm">
+            <span class="block font-bold">John Smith</span>
+            <span class="pull-right auto">
+<!--              <i class="fa inline fa-caret-down"></i>
+              <i class="fa none fa-caret-up"></i>-->
+            </span>
+            john.smith@gmail.com
+          </a>
+        </div>
+        <!-- ngInclude: 'views/partials/aside.nav.uikit.html' --><div  id="nav" class="ng-scope" style=""><nav ui-nav="" class="ng-scope">
+  <ul class="nav">
+    <li class="nav-header m-v-sm hidden-folded">
+      UI Kits
+    </li>
+    
+    <li ui-sref-active="active">
+      <a md-ink-ripple="">
+        <span class="pull-right text-muted">
+          <!--<i class="fa fa-caret-down"></i>-->
+        </span>
+        <!--<i class="pull-right up"><b class="badge no-bg">2</b></i>-->
+        <i class="icon mdi-action-settings-input-svideo i-20"></i>
+        <span class="font-normal">Dashboard</span>
+      </a>
+      <ul class="nav nav-sub">
+        <li ui-sref-active="active" class="active">
+          <a ui-sref="app.dashboard" md-ink-ripple="" href="#/app/dashboard">Dashboard</a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="app.analysis" md-ink-ripple="" href="#/app/analysis">Analysis</a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="app.wall" md-ink-ripple="" href="#/app/wall">Wall</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a md-ink-ripple="">
+        <span class="pull-right text-muted">
+          <!--<i class="fa fa-caret-down"></i>-->
+        </span>
+        <!--<i class="pull-right up"><b class="badge no-bg">3</b></i>-->
+        <i class="icon mdi-navigation-apps i-20"></i>
+        <span class="font-normal">Apps</span>
+      </a>
+      <ul class="nav nav-sub">
+        <li ui-sref-active="active">
+          <a ui-sref="app.note.list" md-ink-ripple="" href="#/app/note/list">Note</a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="app.todo" md-ink-ripple="" href="#/app/todo">Todo</a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="app.inbox.list" md-ink-ripple="" href="#/app/inbox/inbox/">Inbox</a>
+        </li>
+      </ul>
+    </li>
+    <li ng-class="{active:$state.includes('ui.component')}">
+      <a md-ink-ripple="">
+        <span class="pull-right text-muted">
+          <!--<i class="fa fa-caret-down"></i>-->
+        </span>
+        <i class="icon mdi-action-subject i-20"></i>
+        <span class="font-normal">Components</span>
+      </a>
+      <ul class="nav nav-sub">
+        <li ui-sref-active="active">
+          <a ui-sref="ui.component.arrow" md-ink-ripple="" href="#/ui/component/arrow">Arrow</a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="ui.component.badge-label" md-ink-ripple="" href="#/ui/component/badge-label">Badge &amp; Label</a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="ui.component.button" md-ink-ripple="" href="#/ui/component/button">Button</a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="ui.component.color" md-ink-ripple="" href="#/ui/component/color">Color</a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="ui.component.grid" md-ink-ripple="" href="#/ui/component/grid">Grid</a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="ui.component.icon" md-ink-ripple="" href="#/ui/component/icons">Icon</a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="ui.component.list" md-ink-ripple="" href="#/ui/component/list">List Group</a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="ui.component.nav" md-ink-ripple="" href="#/ui/component/nav">Nav</a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="ui.component.progressbar" md-ink-ripple="" href="#/ui/component/progressbar">Progressbar</a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="ui.component.streamline" md-ink-ripple="" href="#/ui/component/streamline">Streamline</a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="ui.component.timeline" md-ink-ripple="" href="#/ui/component/timeline">Timeline</a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="ui.component.uibootstrap" md-ink-ripple="" href="#/ui/component/uibootstrap">UI Bootstrap</a>
+        </li>
+      </ul>
+    </li>
+    <li ng-class="{active:$state.includes('ui.material')}">
+      <a md-ink-ripple="">
+        <span class="pull-right text-muted">
+          <!--<i class="fa fa-caret-down"></i>-->
+        </span>
+        <!--<i class="pull-right up"><b class="badge bg-success">14</b></i>-->
+        <i class="icon mdi-image-flash-on i-20"></i>
+        <span class="font-normal">Material</span>
+      </a>
+      <ul class="nav nav-sub">
+        <li ui-sref-active="active">
+          <a ui-sref="ui.material.button" md-ink-ripple="" href="#/ui/material/button">Button</a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="ui.material.icon" md-ink-ripple="" href="#/ui/material/icon">Icon</a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="ui.material.color" md-ink-ripple="" href="#/ui/material/color">Color</a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="ui.material.card" md-ink-ripple="" href="#/ui/material/card">Card</a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="ui.material.form" md-ink-ripple="" href="#/ui/material/form">Form</a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="ui.material.list" md-ink-ripple="" href="#/ui/material/list">List</a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="ui.material.ngmaterial" md-ink-ripple="" href="#/ui/material/ngmaterial">NgMaterial</a>
+        </li>
+      </ul>
+    </li>
+    <li ng-class="{active:$state.includes('ui.form')}">
+      <a md-ink-ripple="">
+        <span class="pull-right text-muted">
+          <!--<i class="fa fa-caret-down"></i>-->
+        </span>
+        <i class="icon mdi-toggle-radio-button-on i-20"></i>
+        <span class="font-normal">Form</span>
+      </a>
+      <ul class="nav nav-sub">
+        <li ui-sref-active="active">
+          <a ui-sref="ui.form.layout" md-ink-ripple="" href="#/ui/form/layout">Form Layout</a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="ui.form.element" md-ink-ripple="" href="#/ui/form/element">Form Element</a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="ui.form.validation" md-ink-ripple="" href="#/ui/form/validation">Form Validation</a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="ui.form.select" md-ink-ripple="" href="#/ui/form/select">Select</a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="ui.form.editor" md-ink-ripple="" href="#/ui/form/editor">Editor</a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="ui.form.slider" md-ink-ripple="" href="#/ui/form/slider">Slider</a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="ui.form.tree" md-ink-ripple="" href="#/ui/form/tree">Tree</a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="ui.form.file-upload" md-ink-ripple="" href="#/ui/form/file-upload">File Upload</a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="ui.form.image-crop" md-ink-ripple="" href="#/ui/form/image-crop">Image Crop</a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="ui.form.editable" md-ink-ripple="" href="#/ui/form/editable">Editable</a>
+        </li>
+      </ul>
+    </li>
+    <li ng-class="{active:$state.includes('ui.table')}">
+      <a md-ink-ripple="">
+        <span class="pull-right text-muted">
+          <!--<i class="fa fa-caret-down"></i>-->
+        </span>
+        <i class="icon mdi-editor-format-list-bulleted i-20"></i>
+        <span class="font-normal">Table</span>
+      </a>
+      <ul class="nav nav-sub">
+        <li ui-sref-active="active">
+          <a ui-sref="ui.table.static" md-ink-ripple="" href="#/ui/table/static">Static table</a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="ui.table.smart" md-ink-ripple="" href="#/ui/table/smart">Smart table</a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="ui.table.datatable" md-ink-ripple="" href="#/ui/table/datatable">Datatable</a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="ui.table.footable" md-ink-ripple="" href="#/ui/table/footable">Footable</a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="ui.table.nggrid" md-ink-ripple="" href="#/ui/table/nggrid">NG Grid</a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="ui.table.uigrid" md-ink-ripple="" href="#/ui/table/uigrid">UI Grid</a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="ui.table.editable" md-ink-ripple="" href="#/ui/table/editable">Editable</a>
+        </li>
+      </ul>
+    </li>
+    <li ui-sref-active="active">
+      <a ui-sref="ui.chart" md-ink-ripple="" href="#/ui/chart">
+        <i class="pull-right up"><b class="label bg-info">NEW</b></i> 
+        <i class="icon mdi-device-multitrack-audio i-20"></i>
+        <span class="font-normal">Charts</span>
+      </a>
+    </li>
+    <li ng-class="{active:$state.includes('ui.map')}">
+      <a md-ink-ripple="">
+        <span class="pull-right text-muted">
+          <!--<i class="fa fa-caret-down"></i>-->
+        </span>
+        <i class="icon mdi-maps-navigation i-20"></i>
+        <span class="font-normal">Maps</span>
+      </a>
+      <ul class="nav nav-sub">
+        <li ui-sref-active="active">
+          <a ui-sref="ui.map.google" md-ink-ripple="" href="#/ui/map/google">Google Map</a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="ui.map.vector" md-ink-ripple="" href="#/ui/map/vector">Vector Map</a>
+        </li>
+      </ul>
+    </li>
+    <li ng-class="{active:$state.includes('pages')}">
+      <a md-ink-ripple="">
+        <span class="pull-right text-muted">
+          <!--<i class="fa fa-caret-down"></i>-->
+        </span>
+        <i class="icon mdi-editor-insert-drive-file i-20"></i>
+        <span class="font-normal">Pages</span>
+      </a>
+      <ul class="nav nav-sub">
+        <li ui-sref-active="active">
+          <a ui-sref="page.profile" md-ink-ripple="" href="#/page/profile">
+            <span>Profile</span>
+          </a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="page.settings" md-ink-ripple="" href="#/page/settings">
+            <span>Settings</span>
+          </a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="page.blank" md-ink-ripple="" href="#/page/blank">
+            <span>Blank</span>
+          </a>
+        </li>
+        <li>
+          <a ui-sref="access.signin" md-ink-ripple="" href="#/access/signin">
+            <span>Sign In</span>
+          </a>
+        </li>
+        <li>
+          <a ui-sref="access.signup" md-ink-ripple="" href="#/access/signup">
+            <span>Sign Up</span>
+          </a>
+        </li>
+        <li>
+          <a ui-sref="access.forgot-password" md-ink-ripple="" href="#/access/forgot-password">
+            <span>Forgot Password</span>
+          </a>
+        </li>
+        <li>
+          <a ui-sref="access.lockme" md-ink-ripple="" href="#/access/lockme">
+            <span>Lockme Screen</span>
+          </a>
+        </li>
+        <li>
+          <a ui-sref="404" md-ink-ripple="" href="#/404">
+            <span>Error 404</span>
+          </a>
+        </li>
+        <li>
+          <a ui-sref="505" md-ink-ripple="" href="#/505">
+            <span>Error 505</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="" md-ink-ripple="">
+        <span class="pull-right text-muted">
+          <!--<i class="fa fa-caret-down"></i>-->
+        </span>
+        <i class="icon mdi-content-sort i-20"></i>
+        <span>Menu</span>
+      </a>
+      <ul class="nav nav-sub">
+        <li><a href="" md-ink-ripple="">Menu levels 1</a></li>
+        <li>
+          <a href="" md-ink-ripple="">
+            <span class="pull-right text-muted">
+              <i class="fa fa-caret-down"></i>
+            </span>
+            <span class="font-normal">Menu levels 2</span>
+          </a>
+          <ul class="nav nav-sub">
+            <li>
+              <a href="" md-ink-ripple="">Menu levels 2.1</a>
+            </li>
+            <li>
+              <a href="" md-ink-ripple="">Menu levels 2.2</a>
+            </li>
+          </ul>          
+        </li>        
+      </ul>
+    </li>
+    <li class="b-b b m-v-sm"></li>
+    <li>
+      <a target="#nav, #account" ui-toggle-class="hide, show" md-ink-ripple="">
+        <span>Settings</span>
+      </a>
+    </li>
+    <li>
+      <a ui-sref="page.document" md-ink-ripple="" href="#/page/document">
+        <span>Document</span>
+      </a>
+    </li>
+    <li class="m-b-sm">
+      <a href="../html" md-ink-ripple="">
+        <span>HTML Version</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+</div>
+        <div class="hide m-v-xs" id="account">
+          <nav>
+            <ul class="nav">
+              <li>
+                <a ui-sref="page.profile" md-ink-ripple="" href="#/page/profile">
+                  <i class="icon mdi-action-perm-contact-cal i-20"></i>
+                  <span>My Profile</span>
+                </a>
+              </li>
+              <li>
+                <a ui-sref="page.settings" md-ink-ripple="" href="#/page/settings">
+                  <i class="icon mdi-action-settings i-20"></i>
+                  <span>Settings</span>
+                </a>
+              </li>
+              <li>
+                <a ui-sref="access.lockme" md-ink-ripple="" href="#/access/lockme">
+                  <i class="icon mdi-action-exit-to-app i-20"></i>
+                  <span>Logout</span>
+                </a>
+              </li>
+              <li class="m-v-sm b-b b"></li>
+              <li>
+                <a ui-fullscreen="" md-ink-ripple="" class="">
+                  <i class="icon mdi-navigation-fullscreen i-24"></i>
+                  <span>Fullscreen</span>
+                </a>
+              </li>
+              <li>
+                <div class="nav-item">
+                  <label class="md-check">
+                    <input type="checkbox" ng-model="app.setting.asideFolded" class="ng-pristine ng-untouched ng-valid" tabindex="0" aria-checked="false" aria-invalid="false">
+                    <i class="purple no-icon"></i>
+                    <span class="hidden-folded">Folded aside</span>
+                  </label>
+                </div>
+              </li>
+              <li class="p p-v-sm hidden-folded">
+                <div class="m-b-sm">Theming:</div>
+                <div>
+                  <div ng-click="app.setting.theme = {primary: 'indigo', accent: 'green', warn: 'amber'}" style="width:32px;height:16px" class="pointer box pull-left m-r-sm m-b-sm" role="button" tabindex="0">
+                    <span class="indigo col-xs-4 box-col"></span>
+                    <span class="green col-xs-4 box-col"></span>
+                    <span class="amber col-xs-4 box-col"></span>
+                  </div>
+                  <div ng-click="app.setting.theme = {primary: 'green', accent: 'light-green', warn: 'lime'}" style="width:32px;height:16px" class="pointer box pull-left m-r-sm m-b-sm" role="button" tabindex="0">
+                    <span class="green col-xs-4 box-col"></span>
+                    <span class="light-green col-xs-4 box-col"></span>
+                    <span class="lime col-xs-4 box-col"></span>
+                  </div>
+                  <div ng-click="app.setting.theme = {primary: 'deep-purple', accent: 'blue', warn: 'light-blue'}" style="width:32px;height:16px" class="pointer box pull-left m-r-sm m-b-sm" role="button" tabindex="0">
+                    <span class="deep-purple col-xs-4 box-col"></span>
+                    <span class="blue col-xs-4 box-col"></span>
+                    <span class="light-blue col-xs-4 box-col"></span>
+                  </div>
+                  <div ng-click="app.setting.theme = {primary: 'blue', accent: 'indigo', warn: 'amber'}" style="width:32px;height:16px" class="pointer box pull-left m-r-sm m-b-sm" role="button" tabindex="0">
+                    <span class="blue col-xs-4 box-col"></span>
+                    <span class="indigo col-xs-4 box-col"></span>
+                    <span class="amber col-xs-4 box-col"></span>
+                  </div>
+                  <div ng-click="app.setting.theme = {primary: 'cyan', accent: 'teal', warn: 'green'}" style="width:32px;height:16px" class="pointer box pull-left m-r-sm m-b-sm" role="button" tabindex="0">
+                    <span class="cyan col-xs-4 box-col"></span>
+                    <span class="teal col-xs-4 box-col"></span>
+                    <span class="green col-xs-4 box-col"></span>
+                  </div>
+                  <div ng-click="app.setting.theme = {primary: 'pink', accent: 'deep-purple', warn: 'purple'}" style="width:32px;height:16px" class="pointer box pull-left m-r-sm m-b-sm" role="button" tabindex="0">
+                    <span class="pink col-xs-4 box-col"></span>
+                    <span class="deep-purple col-xs-4 box-col"></span>
+                    <span class="purple col-xs-4 box-col"></span>
+                  </div>
+                  <div ng-click="app.setting.theme = {primary: 'blue-grey', accent: 'teal-200', warn: 'lime'}" style="width:32px;height:16px" class="pointer box pull-left m-r-sm m-b-sm" role="button" tabindex="0">
+                    <span class="blue-grey col-xs-4 box-col"></span>
+                    <span class="teal-200 col-xs-4 box-col"></span>
+                    <span class="lime col-xs-4 box-col"></span>
+                  </div>
+                  <div ng-click="app.setting.theme = {primary: 'bg-dark', accent: 'green-300', warn: 'amber-300'}" style="width:32px;height:16px" class="pointer box pull-left m-r-sm m-b-sm" role="button" tabindex="0">
+                    <span class="bg-dark col-xs-4 box-col"></span>
+                    <span class="green-300 col-xs-4 box-col"></span>
+                    <span class="amber-300 col-xs-4 box-col"></span>
+                  </div>
+                  <div ng-click="app.setting.theme = {primary: 'bg-white', accent: 'green', warn: 'teal'}" style="width:32px;height:16px" class="pointer box pull-left m-r-sm m-b-sm" role="button" tabindex="0">
+                    <span class="bg-white col-xs-4 box-col"></span>
+                    <span class="green col-xs-4 box-col"></span>
+                    <span class="teal col-xs-4 box-col"></span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav>
+    <ul class="nav b-t b">
+      <li>
+        <a md-ink-ripple="" target="_blank" href="http://themeforest.net/item/materil-responsive-admin-dashboard-template/11062969">
+          <i class="icon mdi-action-help i-20"></i>
+          <span>Help &amp; Feedback</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+</md-sidenav>
+   
+    <ion-header-bar align-title="left" class="headercolor">
+        
+  <div class="buttons headerleft">
+      <i class="mdate"> 2015-02-16</i>
+      <i class="mreport"> {{report_no}}PCF  Report</i>
+  </div>
+  <h1 class="title"></h1>
+  <div class="buttons headerright1">
+      
+      <i ui-sref="login" class="icon ion-chevron-left bleft" ng-click="previous(date)" md-ink-ripple=""> <div class="md-ripple-container" style=""></div></i>
+      <i class="icon ion-chevron-right bright" ng-click="next(date)" md-ink-ripple=""><div class="md-ripple-container" style=""></div></i>
+      <i class="search icon ion-android-search" md-ink-ripple="" ng-click="search()"><div class="md-ripple-container" style=""></div></i>
+      <i class="icon ion-android-sync refresh" md-ink-ripple=""><div class="md-ripple-container" style=""></div></i>
+<!--     <i class="icon ion-android-more-vertical option"  md-ink-ripple=""><div class="md-ripple-container" style=""></div></i>-->
+      <div class="dropdown">
+        <a md-ink-ripple="" data-toggle="dropdown" aria-expanded="true">
+          <i class="icon ion-android-more-vertical option i-24"></i>
+        <div class="md-ripple-container"></div></a>
+        <ul class="dropdown-menu dropdown-menu-scale pull-right pull-up text-color">
+          <li><a href="">Single-column view</a></li>
+          <li><a href="">Sort by date</a></li>
+          <li><a href="">Sort by name</a></li>
+         
+        </ul>
+      </div>
+   
+  </div>
+  
+</ion-header-bar>
+    <ion-content>
+        <div class="myview2" style="margin:0 auto" ng-repeat="da in data track by $index" >
+         <div  class="p-lg panel md-whiteframe-z1 text-color m mybox" ng-repeat="da1 in da track by $index" ng-click="Move(da1.manifest_no,da1.main_data)">
+               <div class="m-b text-sm subview" ng-style="{{da1.style}}">
+                   <div class="shiping">Shipping-Line:<i class="space" >{{da1.shipping_line}}</i></div>
+       <div class="agent">AGENT: {{da1.agent}}</div>
+      </div>
+      
+        <div class="text-color m">
+             
+             <div class="middlediv">
+                 <div class="data">M/V:<i class="space">{{da1.main_data}}</i><br>
+                     <i style="font-size:15px !important;font-weight:100 !important">Manifest Number(Type):<i class="space" >{{da1.manifest_no}}({{da1.manifest_type}})</i></i>
+                     
+             
+             </div>
+                 <div class="ETA">ETA:{{da1.ETA}}</div>
+                  <div style="clear:both"></div>
+             </div>
+            <div class="bottomdiv">
+                <div class="base">Base:<i style="font-weight:600;padding-left:5px;">{{da1.base}}</i></div>
+                <div class="report">Report Status:<i style="font-weight:600;padding-left:5px;" >{{da1.report_status}}</i></div>
+             <div style="clear:both"></div>
+            </div>
+
+  </div>
+    
+           
+         </div>
+        </div>
+       
+    </ion-content>
+  
+</ion-view>
+
+
+
