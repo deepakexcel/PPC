@@ -9,7 +9,13 @@ angular.module('PCC', [
     'ajaxservice',
     'ui.select',
     'ngMaterial',
-    'PCC.measurement'
+    'PCC.measurement',
+    'PCC.measurement_page2',
+    'PCC.declaration',
+    'PCC.fact',
+    'ui.bootstrap',
+    'ui.bootstrap.datetimepicker'
+    
     
  
 
@@ -39,6 +45,18 @@ angular.module('PCC', [
                         url: "/measurement/:bl_number/:MV",
                         templateUrl: "measurement_page/measurement.html",
                         controller: 'PCC.measureCtrl'
+                    }).state('measurement_page2', {
+                        url: "/measurement_page2/:bl_number/:MV",
+                        templateUrl: "measurement_page/measurement.html",
+                        controller: 'PCC.measure2Ctrl'
+                    }).state('declaration', {
+                        url: "/declaration/:bl_number/:MV",
+                        templateUrl: "declaration_page/declaration.html",
+                        controller: 'PCC.declarationCtrl'
+                    }).state('fact_page', {
+                        url: "/fact_page",
+                        templateUrl: "fact_screen_page/fact_page.html",
+                         controller: 'PCC.factCtrl'
                     });
 
 

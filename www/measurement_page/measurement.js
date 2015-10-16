@@ -76,7 +76,7 @@ $scope.showdata=false;
             width:'',
             tonne:''
     };
-  //  $scope.expression=true;
+    $scope.expression=true;
  $scope.$watch('user.length * user.height*user.width', function (value) {
         $scope.user.cbm = value;
     });
@@ -100,6 +100,11 @@ $scope.showdata=false;
          
       });
  
-
+ $scope.move=function(){
+       
+       var data={bl_number:$scope.bl_number,MV:$scope.mv};
+       urlHelper.openDeclaration(data);
+        
+    };
     
 });

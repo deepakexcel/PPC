@@ -1,0 +1,124 @@
+<ion-view>
+    <div ng-include="'sidenav/sidenav.html'"></div>
+     <ion-header-bar align-title="left" class="headercolor">
+
+        <div class="buttons headerleft">
+            <i  class="icon ion-chevron-left bleft page3" ng-click="goback()" md-ink-ripple=""> <div class="md-ripple-container" style=""></div></i>
+            <i class="mreport page3">M/V:<i class="space page3"> {{mv}}</i></i>
+        </div>
+        <h1 class="title"></h1>
+        <div class="buttons headerright1">
+            <i class="manifest">B/L Number:<i class="space page2 ">{{bl_number}}</i></i>
+        </div>
+    </ion-header-bar>
+    <ion-content>
+    
+        <div class="myview2" style="margin:0 auto" >
+         <div  class="p-lg panel md-whiteframe-z1 text-color m mybox" ng-repeat="da in data.display_data track by $index">
+             
+             
+               <div class=" backc">
+                   <div class="row topd">
+                       <b>Cargo Discharge Declaration</b>
+                   </div>
+                   
+                   <div style="clear:both"></div>
+                    
+                  </div>
+             <div class="backcolor1">
+                  <div class="topd2">
+                      <div class='mv'>
+                          <i class="fpart">M/V:</i><i class="space"><b>{{da.mv}}</b></i>
+                      </div>
+                      <div class='portLoading'>
+                          <i class="fpart">Port of Loading:</i><i class=""><b>{{da.port_loading}}</b></i>
+                      </div>
+                       <div style="clear:both"></div>
+                      </div>
+                  <div style="clear:both"></div>
+             </div>
+             <div class="backcol">
+                  <div class="topd2">
+                      <div class='mv'>
+                          <i class="fpart">Consignee:</i><i class="space"><b>{{da.consignee}}</b></i>
+                      </div>
+                      <div class='portLoading'>
+                          <i class="fpart">B/L Number:</i><i class="space"><b>{{da.bl_number}}</b></i>
+                      </div>
+                       <div style="clear:both"></div>
+                      </div>
+                  <div style="clear:both"></div>
+             </div>
+            
+             <div class="backcol1">
+                  <div class="topd2">
+                      <div class='pkg'>
+                          <i class="fpart">No. of pkgs</i>
+                      </div>
+                      <div class='MT'>
+                          <i class="fpart">M/T</i>
+                      </div>
+                      <div class='LX'>
+                          <i class="fpart">LX</i>
+                      </div>
+                      <div class='W'>
+                          <i class="fpart">W</i>
+                      </div>
+                      <div class='Hx'>
+                          <i class="fpart">Hx</i>
+                      </div>
+                      <div class='CBM'>
+                          <i class="fpart">CBM</i>
+                      </div>
+                      <div class='Tonne'>
+                          <i class="fpart"><b>Tonne</b></i>
+                      </div>
+                      
+                     
+                       <div style="clear:both"></div>
+                      </div>
+                 <div class="line123"></div>
+                  <div style="clear:both"></div>
+             </div>
+             
+             <div class="backcol" >
+                 {{da1}}
+                  <div class="topd2">
+                      <div class='pkg'>
+                          <i class="fpart">{{da.no_pakgs}}</i>
+                      </div>
+                      <div class='MT'>
+                          <i class="fpart">{{da.mt}}</i>
+                      </div>
+                      <div class='LX'>
+                          <i class="fpart">{{da.lx}}</i>
+                      </div>
+                      <div class='W'>
+                          <i class="fpart">{{da.w}}</i>
+                      </div>
+                      <div class='Hx'>
+                          <i class="fpart">{{da.hx}}</i>
+                      </div>
+                      <div class='CBM'>
+                          <i class="fpart">{{da.cbm}}</i>
+                      </div>
+                      <div class='Tonne'>
+                          <i class="fpart"><b>{{da.tonne}}</b></i>
+                      </div>
+                      
+                     
+                       <div style="clear:both"></div>
+                      </div>
+                
+                  <div style="clear:both"></div>
+             </div>
+          
+   <div class='btd'>
+     <div class="bottomd">
+         <i clas="myd">Cargo Marks and Numbers:</i><i class="space ita">{{da.cargo_marks_number}}</i>
+        </div>
+   </div>
+         </div>
+            </div>
+    </ion-content>
+</ion-view>

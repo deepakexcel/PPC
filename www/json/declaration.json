@@ -1,0 +1,45 @@
+{  
+    "display_data":[{
+           "mv":"SAFMARINE SAHARA",
+           "port_loading":"Vllssingen",
+           "consignee":"OCTG Supply Inc./Total Premier",
+           "bl_number":"4880010",
+           "cargo_marks_number":"30 pre-slung pipes",
+             "no_pakgs":"70.00 EA",
+           "mt":"435.522",
+           "lx":"13.100",
+           "w":"0.830",
+           "hx":"0.830",
+           "cbm":"631.721",
+           "tonne":"631.721"
+     },
+     {
+          "mv":"SAFMARINE SAHARA",
+           "port_loading":"Vllssingen",
+           "consignee":"OCTG Supply Inc./Total Premier",
+           "bl_number":"4880010",
+           "cargo_marks_number":"30 pre-slung pipes",
+           "no_pakgs":"34.00 EA",
+           "mt":"211.570",
+           "lx":"13.130",
+           "w":"0.830",
+           "hx":"0.830",
+           "cbm":"307.539",
+           "tonne":"307.539"
+     },
+     {
+          "mv":"SAFMARINE SAHARA",
+           "port_loading":"Vllssingen",
+           "consignee":"OCTG Supply Inc./Total Premier",
+           "bl_number":"4880010",
+           "cargo_marks_number":"30 pre-slung pipes",
+           "no_pakgs":"38.00 EA",
+           "mt":"236.363",
+           "lx":"12.930",
+           "w":"0.830",
+           "hx":"0.830",
+           "cbm":"338.484",
+           "tonne":"338.4"
+     }]
+ 
+}

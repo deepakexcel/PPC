@@ -1,0 +1,145 @@
+<ion-view class="background">
+    <div    ng-include="'sidenav/sidenav.html'"></div>
+    <ion-header-bar align-title="left" class="headercolor">
+
+        <div class="buttons headerleft">
+            <i  class="icon ion-chevron-left bleft page3" ng-click="goback()" md-ink-ripple=""> <div class="md-ripple-container" style=""></div></i>
+            <i class="mreport page3">M/V:<i class="space page3">SHAFMARINE SAHARA</i></i>
+        </div>
+        <h1 class="title"></h1>
+        <div class="buttons headerright1">
+            <i class="manifest">Manifest Number:<i class="space page2 ">MF15000334</i></i>
+        </div>
+    </ion-header-bar>
+    <ion-content>
+        <div class="myview2" style="margin:0 auto" >
+            <div  class="p-lg panel md-whiteframe-z1 text-color m mybox" >
+                <div class="full1">
+                    <div class="row">
+                        <div class="col-25 mylabel"><i class="myactivity">Date</i></div>
+                        <div class="col-10 myselectb">
+                                <div class="dropdown ax1">
+                                    <a class="dropdown-toggle" id="dropdown2" role="button" data-toggle="dropdown" data-target="#" href="#">
+                                        <div class="input-group"><input type="text" class="form-control" data-ng-model="data.dateDropDownInput"><span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                                        </div>
+                                    </a>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                        <datetimepicker data-ng-model="data.dateDropDownInput" data-datetimepicker-config="{ dropdownSelector: '#dropdown2' }"/>
+                                    </ul>
+                                </div>
+<!--                            <md-input-container class="ax">
+                                <label></label>
+                                <input  class="dropdown-toggle" id="dropdown1" data-toggle="dropdown" ng-model="user.quantity">
+                               
+                            </md-input-container>-->
+
+                        </div>
+                    </div>
+                    <div class="row ml1">
+                        <div class="col-25 mylabel "><i class="myactivity">Start Time</i></div>
+                        <div class="col-10 myselectb">
+                            <md-input-container class="ax" flex>
+                                <label></label>
+                                <input  type="time" class="" ng-model="user.starttime">
+                            </md-input-container>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25 mylabel"><i class="myactivity">Action</i></div>
+                        <div class="col-10 myselectb">
+                            <md-input-container class="ax" flex>
+                                <label></label>
+                                <input  class="" ng-model="user.action">
+                            </md-input-container>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25 mylabel"><i class="myactivity">Description</i></div>
+                        <div class="col-10 myselectb">
+                            <md-input-container class="ax" flex>
+                                <label></label>
+                                <input  class="" ng-model="user.description">
+                            </md-input-container>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25 mylabel"><i class="myactivity">Hatch</i></div>
+                        <div class="col-10 myselectb">
+                            <md-input-container class="ax" flex>
+                                <label></label>
+                                <input  class="" ng-model="user.hatch">
+                            </md-input-container>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25 mylabel"><i class="myactivity">Description</i></div>
+                        <div class="col-10 myselectb">
+                            <md-input-container class="ax" flex>
+                                <label></label>
+                                <input  class="" ng-model="user.description2">
+                            </md-input-container>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25 mylabel"><i class="myactivity">Gangs</i></div>
+                        <div class="col-10 myselectb">
+                            <md-input-container class="ax" flex>
+                                <label></label>
+                                <input  class="" ng-model="user.gangs">
+                            </md-input-container>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25 mylabel"><i class="myactivity">Equipment</i></div>
+                        <div class="col-10 myselectb">
+                            <md-input-container class="ax" flex>
+                                <label></label>
+                                <input  class="" ng-model="user.equipment">
+                            </md-input-container>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25 mylabel"><i class="myactivity">Description</i></div>
+                        <div class="col-10 myselectb">
+                            <md-input-container class="ax" flex>
+                                <label></label>
+                                <input  class="" ng-model="user.description3">
+                            </md-input-container>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-90 myarea">
+                            <label class="col-90"><b>Remarks</b></label>
+                            <div class="col-66">
+                                <textarea rows="5" class="form-control"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row myrow12">   
+                        <div class="col-50 mypicture">
+                            <!--<button class="btnab1 md-btn md-raised m-b btn-fw indigo" md-ink-ripple="">End Time<div class="md-ripple-container" style=""></div></button>-->
+                            <div class="col-90 mylabel pad"><i class="myactivity">End Time</i></div>
+                        </div>
+                        <div class="col-50">
+                            <!--<input required="" ng-model="user.asign"  class="btnab2 col- form-control ng-dirty ng-valid-number ng-valid ng-valid-required ng-touched" ng-disabled="expression" tabindex="0" aria-required="false" aria-invalid="false" style="">-->
+                            <md-input-container class="ax" flex>
+                                <label></label>
+                                <input type="time" class="col-50" ng-model="user.endtime">
+                            </md-input-container>
+                        </div>
+                    </div>
+                    <div class="row">   
+
+                        <div class="col" style="text-align:center;width:100%">
+                            <button class="md-btn md-raised m-b btn-fw indigo" ng-click='move()' md-ink-ripple=""><i class="myicon icon  mdi-action-input i-24"></i>Submit Entry<div class="md-ripple-container" style=""></div></button>
+                        </div>
+                    </div>
+                </div> 
+            </div>  
+        </div>
+
+    </ion-content>
+</ion-view>

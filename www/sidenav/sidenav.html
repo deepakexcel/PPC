@@ -2,8 +2,7 @@
 <md-backdrop ng-show="showdata" ng-click="backdrop()" class="md-sidenav-backdrop md-opaque ng-scope md-default-theme myback"></md-backdrop>
     <md-sidenav ng-click="showback()" md-component-id="aside" ui-view="aside@" ng-class="{'folded': app.setting.asideFolded || $state.current.data.folded}" class="app-aside md-sidenav-left md-closed ng-scope ng-isolate-scope folded" id="aside" tabindex="-1"><div class="box bg-white ng-scope">
             <div ng-class="$state.current.data.theme ? $state.current.data.theme.primary : app.setting.theme.primary" class="navbar md-whiteframe-z1 no-radius indigo">
-
-
+                
                 <!-- brand -->
                 <a class="navbar-brand">
                     <div class="logomenu" >
@@ -19,7 +18,7 @@
                         <div  id="nav" class="ng-scope" style=""><nav ui-nav="" class="ng-scope">
                                 <ul class="nav">
 
-                                    <li ui-sref-active="active">
+                                    <li  ui-sref="fact_page">
                                         <a md-ink-ripple="">
                                             <span class="pull-right text-muted">
                                                 <!--<i class="fa fa-caret-down"></i>-->

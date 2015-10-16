@@ -1,0 +1,128 @@
+<ion-view class="background">
+    <div    ng-include="'sidenav/sidenav.html'"></div>
+    <ion-header-bar align-title="left" class="headercolor">
+
+        <div class="buttons headerleft">
+            <i  class="icon ion-chevron-left bleft page3" ng-click="goback()" md-ink-ripple=""> <div class="md-ripple-container" style=""></div></i>
+            <i class="mreport page3">M/V:<i class="space page3"> {{mv}}</i></i>
+        </div>
+        <h1 class="title"></h1>
+        <div class="buttons headerright1">
+            <i class="manifest">B/L Number:<i class="space page2 ">{{bl_number}}</i></i>
+        </div>
+    </ion-header-bar>
+    <ion-content>
+        <div class="myview2" style="margin:0 auto" >
+            <div  class="p-lg panel md-whiteframe-z1 text-color m mybox" >
+                <div class="full1">
+                    <div class="row">    
+                        <div class="col-25 mylabel"><i class="myactivity">Activity type</i></div>
+                        <div class="col-50 myselectb">
+                            <md-select ng-model="neighborhood1" placeholder="select" class="myselect col-90">
+                                <md-option ng-value="opt" ng-repeat="opt in data">{{opt}}</md-option>
+                            </md-select>
+                        </div>
+                    </div>
+                    <div class="row">    
+                        <div class="col-25 mylabel"><i class="myactivity">Cargo Class</i></div>
+                        <div class="col-50 myselectb">
+                            <md-select ng-model="neighborhood2" placeholder="select" class="myselect col-90">
+                                <md-option ng-value="opt" ng-repeat="opt in data2">{{opt}}</md-option>
+                            </md-select>
+                        </div>
+                    </div>
+                    <div class="row">    
+                        <div class="col-25 mylabel"><i class="myactivity">Bill of Lading</i></div>
+                        <div class="col-50 myselectb">
+                            <md-select ng-model="neighborhood3" placeholder="select" class="myselect col-90">
+                                <md-option ng-value="opt" ng-repeat="opt in data1">{{opt}}</md-option>
+                            </md-select>
+                        </div>
+                    </div>
+                    <div class="row">    
+                        <div class="col-25 mylabel"><i class="myactivity">Port of Loading</i></div>
+                        <div class="col-50 myselectb">
+                            <md-select ng-model="neighborhood4" placeholder="select" class="myselect col-90">
+                                <md-option ng-value="opt" ng-repeat="opt in data4">{{opt}}</md-option>
+                            </md-select>
+                        </div>
+                    </div>
+                    <div class="row">    
+
+                        <div class="col-25 mylabel"><i class="myactivity">Consignee</i></div>
+                        <div class="col-50 myselectb">
+                            <md-select ng-model="neighborhood5" placeholder="select" class="myselect col-90">
+                                <md-option ng-value="opt" ng-repeat="opt in data3">{{opt}}</md-option>
+                            </md-select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25 mylabel"><i class="myactivity">Quantity</i></div>
+                        <div class="col-10 myselectb">
+                            <md-input-container class="ax" flex>
+
+                                <input  class="" ng-model="user.quantity">
+                            </md-input-container>
+                        </div>
+                    </div>
+                    <div class="row">   
+                        <md-input-container flex>
+                            <label>Length(m)</label>
+                            <input type="number" class="col-90 m1" ng-model="user.length">
+                        </md-input-container>
+                        <md-input-container flex>
+                            <label>Width(m)</label>
+                            <input type="number" class="col-90 m2" ng-model="user.width">
+                        </md-input-container>
+                        <md-input-container flex>
+                            <label>height(m)</label>
+                            <input type="number" class="col-90 m3" ng-model="user.height">
+                        </md-input-container>
+                        <md-input-container flex>
+                            <label>Weight(t)</label>
+                            <input type="number" class="col-90 m1" ng-model="user.weight">
+                        </md-input-container>
+                    </div>
+                    <div class="row">   
+                 
+                        <md-input-container class="col-50 mycbm" flex>
+                            <label>CBM</label>
+                          <input class="col-20 mm" ng-model="user.cbm" ng-disabled="expression">
+                        </md-input-container>
+                        <md-input-container class="col-50" flex>
+                            <label>Freight Tonne</label>
+                            <input class="col-20" ng-model="user.tonne" ng-disabled="expression">
+                        </md-input-container>
+                        </div>
+                 
+                    <div class="row">
+                        <div class="col-90 myarea">
+                            <label class="col-90"><b>Cargo Marks and Numbers</b></label>
+                            <div class="col-66">
+                                <textarea rows="5" class="form-control"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row myrow12">   
+                        <div class="col-50 mypicture">
+                          <button class="btnab1 md-btn md-raised m-b btn-fw indigo" md-ink-ripple=""><i class="myicon icon mdi-device-wifi-tethering i-24"></i>Assign<div class="md-ripple-container" style=""></div></button>
+
+                        </div>
+                        <div class="col-50">
+                            <input required="" ng-model="user.asign"  class="btnab2 col- form-control ng-dirty ng-valid-number ng-valid ng-valid-required ng-touched" ng-disabled="expression" tabindex="0" aria-required="false" aria-invalid="false" style="">
+                        </div>
+                    </div>
+                    <div class="row">   
+                        <div class="col-50 mypicture">
+                            <button class="md-btn md-raised m-b btn-fw indigo" md-ink-ripple=""><i class="myicon icon mdi-image-camera-alt i-24"></i>Take Picture<div class="md-ripple-container" style=""></div></button>
+
+                        </div>
+                        <div class="col-50">
+                            <button class="md-btn md-raised m-b btn-fw indigo" md-ink-ripple=""><i class="myicon icon  mdi-action-input i-24"></i>Submit Entry<div class="md-ripple-container" style=""></div></button>
+                        </div>
+                    </div>
+                </div> 
+            </div>  
+    </ion-content>
+</ion-view>

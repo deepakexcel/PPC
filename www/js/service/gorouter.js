@@ -12,6 +12,11 @@ ajaxTime.factory('urlHelper', function($state) {
     goview.openMeasurement=function(data){
         $state.go("measurement",data);
     };
-    
+    goview.openMeasurement_page2=function(data){
+        $state.go("measurement_page2",data);
+    };
+     goview.openDeclaration=function(data){
+        $state.go("declaration",data);
+    };
     return goview;
 });

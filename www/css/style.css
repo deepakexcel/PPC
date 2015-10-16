@@ -416,6 +416,15 @@ i.myactivity {
     min-width: 150px;
 
 }
+.ax1{
+  
+    min-width: 167px;
+
+}
+.datetimepicker {
+   
+    width: 450px !important;
+}
 .MYASSIGN{
      text-align:right;
     padding-right:10px;
@@ -424,11 +433,12 @@ i.myactivity {
    margin-left:20% !important   ;
 }
 .mm{
-    margin-left:66%;
+    margin-left:65%;
     ;
 }
 .mycbm{
     text-align:right;
+    margin-right:10%
 }
 .myicon{
     padding: 0 8px 0 0;
@@ -439,6 +449,101 @@ i.myactivity {
 .btnab2{
     width:144px !important;
 }
+.topd {
+    font-size: 1.5em !important;
+    font-weight: 600;
+    width: 97%;
+    margin: 0 auto;
+    padding: 2px 0 3px 0px;
+}
+.backc{
+    background-color: #6699ff;
+    color: #fff;
+  
+}
+.backcol{
+    box-shadow: 0px 1px 0px 0px #BDBDBD;
+    }
+.topd2 {
+    width: 97%;
+    margin: 0 auto;
+    padding: 7px 0 7px 0px;
+}
+.mv {
+    float: left;
+}
+.portLoading {
+    float: right;
+}
+.pkg {
+    float: left;
+    width: 18%;
+}
+.MT {
+    float: left;
+    width: 13%;
+    text-align: center;
+}
+.LX {
+    float: left;
+    width: 13%;
+    text-align: center;
+}
+.W {
+    float: left;
+    width: 13%;
+    text-align: center;
+}
+.Hx {
+    float: left;
+    width: 13%;
+    text-align: center;
+}
+.CBM {
+    float: left;
+    width: 13%;
+    text-align: center;
+}
+.Tonne {
+    float: right;
+    width: 17%;
+    text-align: right;
+}
+.line123 {
+    background-color: #292727;
+    margin: -7px 0 0;
+    padding: 0.5px;
+    width: 96%;
+    margin-left: 2%;
+}
+.ita{
+    font-style:italic;
+}
+.bottomd {
+    width: 97%;
+    margin: 0 auto;
+    padding: 7px 0 7px 0;
+    font-size: 1.2em;
+}
+.btd{
+    background-color:#eeeeee;
+    margin-top: 1px;
+}
+.pad{
+    padding-top:5px;
+}
+input.mb-input-field.ng-pristine.ng-valid.ng-touched {
+    padding: 0 0 0 7px;
+}
+.row.ml1 {
+    margin-top: 18px;
+}
+
+
+
+
+
+
 /*===================================================media =======================================*/
 @media screen and (max-width: 450px) {
     .headerleft{
