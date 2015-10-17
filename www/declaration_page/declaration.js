@@ -1,6 +1,7 @@
 angular.module('PCC.declaration', [])
 
 .controller('PCC.declarationCtrl',function($scope,$stateParams,$ionicHistory,urlHelper,ajaxRequest){
+    $scope.showdata=false;
       console.log($stateParams);
        $scope.bl_number=$stateParams.bl_number;
     $scope.mv=$stateParams.MV;

@@ -1,86 +1,107 @@
 
 <md-backdrop ng-show="showdata" ng-click="backdrop()" class="md-sidenav-backdrop md-opaque ng-scope md-default-theme myback"></md-backdrop>
-    <md-sidenav ng-click="showback()" md-component-id="aside" ui-view="aside@" ng-class="{'folded': app.setting.asideFolded || $state.current.data.folded}" class="app-aside md-sidenav-left md-closed ng-scope ng-isolate-scope folded" id="aside" tabindex="-1"><div class="box bg-white ng-scope">
-            <div ng-class="$state.current.data.theme ? $state.current.data.theme.primary : app.setting.theme.primary" class="navbar md-whiteframe-z1 no-radius indigo">
-                
-                <!-- brand -->
-                <a class="navbar-brand">
-                    <div class="logomenu" >
-                        <img class="ab" src="img/logo-nuovo.png" alt=""/>
+<md-sidenav ng-click="showback()" md-component-id="aside" ui-view="aside@" ng-class="{'folded': app.setting.asideFolded || $state.current.data.folded}" class="app-aside md-sidenav-left md-closed ng-scope ng-isolate-scope folded" id="aside" tabindex="-1"><div class="box bg-white ng-scope">
+        <div ng-class="$state.current.data.theme ? $state.current.data.theme.primary : app.setting.theme.primary" class="navbar md-whiteframe-z1 no-radius indigo">
 
+            <!-- brand -->
+            <a class="navbar-brand">
+                <div class="logomenu" >
+                    <img class="ab" src="img/logo-nuovo.png" alt=""/>
+
+                </div>
+            </a>
+            <!-- / brand -->
+        </div>
+        <div class="box-row">
+        <div class="box-cell scrollable hover">
+                <div class="box-inner">
+                    <div class="p hidden-folded"  style="background-color:#C1C0C0">
+
+                        <a class="block m-t-sm" ui-toggle-class="hide, show" target="#nav, #account">
+                            <span class="block font-bold username">{{username}}</span>
+                            <span class="pull-right auto">
+ 
+      
+                            </span>
+                            PCF - v<i class="space">{{version}}</i>
+                        </a>
                     </div>
-                </a>
-                <!-- / brand -->
-            </div>
-            <div class="box-row">
-                <div class="box-cell scrollable hover">
-                    <div class="box-inner">
-                        <div  id="nav" class="ng-scope" style=""><nav ui-nav="" class="ng-scope">
-                                <ul class="nav">
+                    <div  id="nav" class="ng-scope" style=""><nav ui-nav="" class="ng-scope">
+                            <ul class="nav">
+                                 <li ng-click="search()" ng-show="show">
+                                    <a md-ink-ripple="">
+                                        <span class="pull-right text-muted">
+                                            <!--<i class="fa fa-caret-down"></i>-->
+                                        </span>
+                                        <!--<i class="pull-right up"><b class="badge no-bg">2</b></i>-->
+                                        <i class="icon icon ion-android-search i-20"></i>
+                                        <span class="font-normal">Search</span>
+                                    </a>
 
-                                    <li  ui-sref="fact_page">
-                                        <a md-ink-ripple="">
-                                            <span class="pull-right text-muted">
-                                                <!--<i class="fa fa-caret-down"></i>-->
-                                            </span>
-                                            <!--<i class="pull-right up"><b class="badge no-bg">2</b></i>-->
-                                            <i class="icon mdi-content-create i-20"></i>
-                                            <span class="font-normal">Statement of Facts</span>
-                                        </a>
+                                </li>
+                                <li  ui-sref="main.fact_page" ng-hide="show1">
+                                    <a md-ink-ripple="">
+                                        <span class="pull-right text-muted">
+                                            <!--<i class="fa fa-caret-down"></i>-->
+                                        </span>
+                                        <!--<i class="pull-right up"><b class="badge no-bg">2</b></i>-->
+                                        <i class="icon mdi-content-create i-20" ></i>
+                                        <span class="font-normal">Statement of Facts</span>
+                                    </a>
 
-                                    </li>
-                                    <li>
-                                        <a md-ink-ripple="">
-                                            <span class="pull-right text-muted">
-                                                <!--<i class="fa fa-caret-down"></i>-->
-                                            </span>
-                                            <!--<i class="pull-right up"><b class="badge no-bg">3</b></i>-->
-                                            <i class="icon mdi-action-description i-20"></i>
-                                            <span class="font-normal">Management Reports</span>
-                                        </a>
+                                </li>
+                                <li ui-sref="main.management_report_page" ng-hide="show1">
+                                    <a md-ink-ripple="">
+                                        <span class="pull-right text-muted">
+                                            <!--<i class="fa fa-caret-down"></i>-->
+                                        </span>
+                                        <!--<i class="pull-right up"><b class="badge no-bg">3</b></i>-->
+                                        <i class="icon mdi-action-description i-20"></i>
+                                        <span class="font-normal">Management Reports</span>
+                                    </a>
 
-                                    </li>
-                                    <li class="{{classname}}" ng-click="name()" >
-                                        <a md-ink-ripple>
-                                            <span class="pull-right text-muted">
-                                                <i class="fa ion-arrow-down-b"></i>
-                                            </span>
-                                            <i class="pull-right up"><b class="badge no-bg"></b></i>
-                                            <i class="icon mdi-toggle-radio-button-on i-20"></i>
-                                            <span class="font-normal">Options</span>
-                                        </a>
-                                        <ul class="nav nav-sub">
-                                            <li menu-close>
-                                                <a md-ink-ripple ui-sref="app.note.list">Note</a>
-                                            </li>
-                                            <li menu-close>
-                                                <a md-ink-ripple ui-sref="app.todo">Todo</a>
-                                            </li>
-                                            <li menu-close>
-                                                <a md-ink-ripple ui-sref="app.inbox.list">Inbox</a>
-                                            </li>
-                                        </ul>
-                                    </li>
+                                </li>
+                                <li class="{{classname}}" ng-click="name()" >
+                                    <a md-ink-ripple>
+                                        <span class="pull-right text-muted mn">
+                                            <i class="fa ion-arrow-down-b"></i>
+                                        </span>
+                                        <i class="pull-right up "><b class="badge no-bg"></b></i>
+                                        <i class="icon mdi-toggle-radio-button-on i-20"></i>
+                                        <span class="font-normal">Options</span>
+                                    </a>
+                                    <ul class="nav nav-sub">
+                                        <li menu-close>
+                                            <a md-ink-ripple ng-click="logout()">Logout</a>
+                                        </li>
+                                        <li menu-close>
+                                            <a md-ink-ripple ui-sref="app.todo">Todo</a>
+                                        </li>
+                                        <li menu-close>
+                                            <a md-ink-ripple ui-sref="app.inbox.list">Inbox</a>
+                                        </li>
+                                    </ul>
+                                </li>
 
-                                    <li>
-                                        <a md-ink-ripple="">
-                                            <span class="pull-right text-muted">
-                                                <i class="fa "></i>
-                                            </span>
-                                            <i class="icon mdi-av-loop i-20"></i>
-                                            <span class="font-normal">Referesh</span>
-                                        </a>
+                                <li>
+                                    <a md-ink-ripple="">
+                                        <span class="pull-right text-muted">
+                                            <i class="fa "></i>
+                                        </span>
+                                        <i class="icon mdi-av-loop i-20"></i>
+                                        <span class="font-normal">Referesh</span>
+                                    </a>
 
-                                    </li>
+                                </li>
 
-                                </ul>
-                            </nav>
-                        </div>
-
+                            </ul>
+                        </nav>
                     </div>
+
                 </div>
             </div>
         </div>
+    </div>
 
-        </div>
-    </md-sidenav>
+</div>
+</md-sidenav>

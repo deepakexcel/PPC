@@ -3,7 +3,7 @@
 angular.module('PCC.login', [])
 
 
-.controller('PCC.LoginCtrl', function($scope,ajaxRequest,urlHelper) {
+.controller('PCC.LoginCtrl', function($scope,ajaxRequest,urlHelper,timeStorage) {
     var self=this;
     $scope.user={
          password:''
@@ -50,6 +50,7 @@ angular.module('PCC.login', [])
                 console.log(data);
              if(data.msg=="user login successfully"){
                  console.log('yes');
+                 timeStorage.set('login',$scope.person.selected.user_name,200);
                  urlHelper.openReport();
              }
                   

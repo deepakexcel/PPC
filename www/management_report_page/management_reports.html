@@ -1,0 +1,26 @@
+<ion-view>
+    <div ng-include="'sidenav/sidenav.html'"></div>
+     <ion-header-bar align-title="left" class="headercolor">
+
+        <div class="buttons headerleft">
+            <i  class="icon ion-chevron-left bleft page3" ng-click="goback()" md-ink-ripple=""> <div class="md-ripple-container" style=""></div></i>
+            <i class="mreport page3">M/V:<i class="space page3">SHAFMARINE SAHARA</i></i>
+        </div>
+        <h1 class="title"></h1>
+        <div class="buttons headerright1">
+            <i class="manifest">Manifest Number:<i class="space page2 ">MF15000334</i></i>
+        </div>
+    </ion-header-bar>
+    <ion-content>
+    
+        <div class="myview2" style="margin:0 auto" >
+         <div  class="p-lg panel md-whiteframe-z1 text-color  mybox" ng-repeat="da in data.display_data track by $index">
+             <canvas id="doughnut" class="chart chart-doughnut"
+  chart-data="data" chart-labels="labels">
+</canvas> 
+             
+              
+         </div>
+            </div>
+    </ion-content>
+</ion-view>

@@ -4,19 +4,22 @@ ajaxTime.factory('urlHelper', function($state) {
         $state.go("login");
     };
     goview.openReport = function() {
-        $state.go("Report");
+        $state.go("main.Report");
     };
     goview.openBill_lading=function(data){
-        $state.go("bill_lading",data);
+        $state.go("main.bill_lading",data);
     };
     goview.openMeasurement=function(data){
-        $state.go("measurement",data);
+        $state.go("main.measurement",data);
     };
     goview.openMeasurement_page2=function(data){
-        $state.go("measurement_page2",data);
+        $state.go("main.measurement_page2",data);
     };
      goview.openDeclaration=function(data){
-        $state.go("declaration",data);
+        $state.go("main.declaration",data);
+    };
+    goview.openFact_page2=function(){
+        $state.go("main.fact_page2");
     };
     return goview;
 });
