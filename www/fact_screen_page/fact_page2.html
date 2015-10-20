@@ -1,124 +1,90 @@
 <ion-view>
-    <div ng-include="'sidenav/sidenav.html'"></div>
+    <!--<div ng-include="'sidenav/sidenav.html'"></div>-->
      <ion-header-bar align-title="left" class="headercolor">
 
         <div class="buttons headerleft">
             <i  class="icon ion-chevron-left bleft page3" ng-click="goback()" md-ink-ripple=""> <div class="md-ripple-container" style=""></div></i>
-            <i class="mreport page3">M/V:<i class="space page3"> {{mv}}</i></i>
+            <i class="mreport page3">M/V:<i class="space page3">SHAFMARINE SAHARA</i></i>
         </div>
         <h1 class="title"></h1>
         <div class="buttons headerright1">
-            <i class="manifest">B/L Number:<i class="space page2 ">{{bl_number}}</i></i>
+            <i class="manifest">Manifest Number:<i class="space page2 ">MF15000334</i></i>
         </div>
     </ion-header-bar>
     <ion-content>
     
-        <div class="myview2" style="margin:0 auto" >
-         <div  class="p-lg panel md-whiteframe-z1 text-color m mybox" ng-repeat="da in data.display_data track by $index">
-             
-             
-               <div class=" backc">
-                   <div class="row topd">
-                       <b>Cargo Discharge Declaration</b>
-                   </div>
-                   
-                   <div style="clear:both"></div>
-                    
-                  </div>
-             <div class="backcolor1">
-                  <div class="topd2">
-                      <div class='mv'>
-                          <i class="fpart">M/V:</i><i class="space"><b>{{da.mv}}</b></i>
+        <div class="myview2" style="margin:0 auto"  >
+         <div  class="p-lg panel md-whiteframe-z1 text-color m mybox" ng-repeat='da in data.display_data track by $index' >
+              <div class=" backcolor .xn2">
+                
+            
+                  <div class="topd2 xn">
+                      <div class='date12'>
+                          <i class="fpart"><b>Date</b></i>
                       </div>
-                      <div class='portLoading'>
-                          <i class="fpart">Port of Loading:</i><i class=""><b>{{da.port_loading}}</b></i>
+                      <div class='day12'>
+                          <i class="fpart"><b>Day</b></i>
                       </div>
-                       <div style="clear:both"></div>
+                      <div class='starttime12'>
+                          <i class="fpart"><b>Start Time</b></i>
                       </div>
+                      <div class='endtime12'>
+                          <i class="fpart"><b>End Time</b></i>
+                      </div>
+                      <div class='nogangs12'>
+                          <i class="fpart"><b>No of Gangs</b></i>
+                      </div>
+                     <div style="clear:both"></div>
+                      </div>
+                 <!--<div class="line1234"></div>-->
                   <div style="clear:both"></div>
              </div>
+             
+             <div class="backcolor1">
+                  <div class="topd2 xn1">
+                      <div class='date12'>
+                          <i class="fpart">{{da.date}}</i>
+                      </div>
+                      <div class='day12'>
+                          <i class="fpart">{{da.day}}</i>
+                      </div>
+                      <div class='starttime12'>
+                          <i class="fpart">{{da.start_time}}</i>
+                      </div>
+                      <div class='endtime12'>
+                          <i class="fpart">{{da.end_time}}</i>
+                      </div>
+                      <div class='nogangs12'>
+                          <i class="fpart">{{da.no_of_gangs}}</i>
+                      </div>
+                     <div style="clear:both"></div>
+                      </div>
+                     
+                      </div>
+                  <div style="clear:both"></div>
+          
              <div class="backcol">
                   <div class="topd2">
                       <div class='mv'>
-                          <i class="fpart">Consignee:</i><i class="space"><b>{{da.consignee}}</b></i>
+                          <i class="fpart"><b>Description</b>:</i><i class="space"> {{da.description}}</i>
                       </div>
-                      <div class='portLoading'>
-                          <i class="fpart">B/L Number:</i><i class="space"><b>{{da.bl_number}}</b></i>
-                      </div>
-                       <div style="clear:both"></div>
-                      </div>
-                  <div style="clear:both"></div>
-             </div>
-            
-             <div class="backcol1">
-                  <div class="topd2">
-                      <div class='pkg'>
-                          <i class="fpart">No. of pkgs</i>
-                      </div>
-                      <div class='MT'>
-                          <i class="fpart">M/T</i>
-                      </div>
-                      <div class='LX'>
-                          <i class="fpart">LX</i>
-                      </div>
-                      <div class='W'>
-                          <i class="fpart">W</i>
-                      </div>
-                      <div class='Hx'>
-                          <i class="fpart">Hx</i>
-                      </div>
-                      <div class='CBM'>
-                          <i class="fpart">CBM</i>
-                      </div>
-                      <div class='Tonne'>
-                          <i class="fpart"><b>Tonne</b></i>
-                      </div>
-                      
                      
-                       <div style="clear:both"></div>
                       </div>
-                 <div class="line123"></div>
                   <div style="clear:both"></div>
              </div>
-             
-             <div class="backcol" >
-                 {{da1}}
+            <div class="backcol">
                   <div class="topd2">
-                      <div class='pkg'>
-                          <i class="fpart">{{da.no_pakgs}}</i>
-                      </div>
-                      <div class='MT'>
-                          <i class="fpart">{{da.mt}}</i>
-                      </div>
-                      <div class='LX'>
-                          <i class="fpart">{{da.lx}}</i>
-                      </div>
-                      <div class='W'>
-                          <i class="fpart">{{da.w}}</i>
-                      </div>
-                      <div class='Hx'>
-                          <i class="fpart">{{da.hx}}</i>
-                      </div>
-                      <div class='CBM'>
-                          <i class="fpart">{{da.cbm}}</i>
-                      </div>
-                      <div class='Tonne'>
-                          <i class="fpart"><b>{{da.tonne}}</b></i>
-                      </div>
-                      
-                     
-                       <div style="clear:both"></div>
-                      </div>
-                
-                  <div style="clear:both"></div>
-             </div>
           
-   <div class='btd'>
-     <div class="bottomd">
-         <i clas="myd">Cargo Marks and Numbers:</i><i class="space ita">{{da.cargo_marks_number}}</i>
-        </div>
-   </div>
-         </div>
+         <div class="bottom1"><b>Equipment:</b><i class="space mybtm">{{da.equipment}}</i></div>
+         <div class="bottom2"><b>Hatches:</b><i class="space mybtm">{{da.hatches}}</i></div>
+             <div style="clear:both"></div>
             </div>
+             
+           </div>
+                  <div style="clear:both"></div>
+             </div>
+ 
+         </div>
+          
     </ion-content>
 </ion-view>

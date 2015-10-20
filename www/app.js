@@ -3,7 +3,6 @@
 // Declare app level module which depends on views, and components
 angular.module('PCC', [
     'ionic',
-    
     'PCC.login',
     'PCC.Report',
     'PCC.bill',
@@ -17,13 +16,7 @@ angular.module('PCC', [
     'PCC.sidenav',
     'PCC.main',
     'PCC.report',
-   'ui.bootstrap.datetimepicker',
-   
-    
-
-
-
-
+    'ui.bootstrap.datetimepicker',
 ])
         .run(function($ionicPlatform) {
             $ionicPlatform.ready(function() {
@@ -33,7 +26,7 @@ angular.module('PCC', [
         config(function($stateProvider, $urlRouterProvider) {
             $urlRouterProvider.otherwise('/login');
             $stateProvider
-                    .state('login', {
+          .state('login', {
                         url: "/login",
                         templateUrl: "login_page/login.html",
                         controller: "PCC.LoginCtrl"
@@ -45,16 +38,15 @@ angular.module('PCC', [
                 url: "/main",
                 templateUrl: "main/main.html",
                 controller: 'PCC.mainCtrl'
-            })
-                    .state('main.Report', {
-                        url: "/Report",
-                        views: {
-                            'new': {
-                                templateUrl: "Report_page/Report.html",
-                                controller: 'PCC.ReportCtrl'
-                            }
-                        }
-                    }).state('main.bill_lading', {
+            }).state('main.Report', {
+                url: "/Report",
+                views: {
+                    'new': {
+                        templateUrl: "Report_page/Report.html",
+                        controller: 'PCC.ReportCtrl'
+                    }
+                }
+            }).state('main.bill_lading', {
                 url: "/bill_ladding/:manifest_no/:MV",
                 views: {
                     'new': {
@@ -91,7 +83,8 @@ angular.module('PCC', [
                 url: "/fact_page2",
                 views: {
                     'new': {
-                        templateUrl: "fact_screen_page/fact_page2.html"
+                        templateUrl: "fact_screen_page/fact_page2.html",
+                        controller: "PCC.factCtrl"
                     }
                 }
 
@@ -100,7 +93,7 @@ angular.module('PCC', [
                 views: {
                     'new': {
                         templateUrl: "management_report_page/management_reports.html",
-                        controller:'PCC.reporstCtrl'
+                        controller: 'PCC.reporstCtrl'
                     }
                 }
 

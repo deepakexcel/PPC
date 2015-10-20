@@ -1,5 +1,5 @@
 <ion-view>
-    <div ng-include="'sidenav/sidenav.html'"></div>
+    <!--<div ng-include="'sidenav/sidenav.html'"></div>-->
      <ion-header-bar align-title="left" class="headercolor">
 
         <div class="buttons headerleft">
@@ -14,7 +14,7 @@
     <ion-content>
     
         <div class="myview2" style="margin:0 auto" >
-         <div  class="p-lg panel md-whiteframe-z1 text-color  mybox" ng-repeat="da in data.display_data track by $index">
+         <div  class="p-lg panel md-whiteframe-z1 text-color  mybox" on-long-press="itemOnLongPress()" ng-repeat="da in data.display_data track by $index">
              
              
                <div class=" backc">

@@ -55,8 +55,8 @@ ajaxTime.factory('ajaxRequest',
                     init: function() {
                     },
                     url: function(api) {
-                           return 'file:///android_asset/www/'+api;
-                  //    return 'http://localhost/PCC/www/' + api;
+               return 'file:///android_asset/www/'+api;
+               //    return 'http://localhost/PCC/www/' + api;
 
                     },
                     send: function(api, data, method) {

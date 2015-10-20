@@ -33,6 +33,7 @@ angular.module('PCC.main', [])
         }
     };
     var isAndroid = ionic.Platform.isAndroid();
+    console.log(isAndroid);
     if(isAndroid){
    cordova.getAppVersion.getVersionNumber(function (version) {
    $scope.version=version;
@@ -46,4 +47,6 @@ angular.module('PCC.main', [])
       timeStorage.remove('login');
       urlHelper.openlogin();
     };
+    var timeInMs = Date.now();
+    console.log(timeInMs);
 });

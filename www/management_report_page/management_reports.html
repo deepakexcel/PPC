@@ -1,5 +1,5 @@
 <ion-view>
-    <div ng-include="'sidenav/sidenav.html'"></div>
+    <!--<div ng-include="'sidenav/sidenav.html'"></div>-->
      <ion-header-bar align-title="left" class="headercolor">
 
         <div class="buttons headerleft">
@@ -14,13 +14,82 @@
     <ion-content>
     
         <div class="myview2" style="margin:0 auto" >
-         <div  class="p-lg panel md-whiteframe-z1 text-color  mybox" ng-repeat="da in data.display_data track by $index">
-             <canvas id="doughnut" class="chart chart-doughnut"
-  chart-data="data" chart-labels="labels">
-</canvas> 
+         <div  class="p-lg panel md-whiteframe-z1 text-color  mybox" >
+             <div class="barchart">
+                 <div class="tit">
+                     <b> DAILY DISCHARGE RATE</b>
+                 </div>
+         <canvas id="bar" class="chart chart-bar" chart-data="data" chart-labels="labels" ></canvas>
+             </div>
              
+             
+             <div class="piechart">
+                  <div class="tit">
+                     <b>DISCHARGE PROGRESS </b>
+                 </div>
+                <canvas id="pie" class="chart chart-pie" chart-data="data1"
+                        chart-labels="labels1" chart-legend="true" chart-options='per'>
+                </canvas> 
+             </div> 
+           
               
          </div>
             </div>
+         <div ng-repeat="da in data track by $index">
+        <table id="tab">
+            <tbody><tr id="tr1"><th id="th2">Bill of Lading</th>
+                <th id="th2">Consignee</th>
+                <th id="th2">Destination</th>
+                <th id="th2">Discharged</th>
+                <th id="th2">R.O.B</th>
+                <th id="th2">Discharge Progress(%)</th>
+                </tr>
+            <tr id="tr2" ng-repeat="da1 in da track by $index">
+               <td>{{da1.bill_lading}}</td>
+        <td>{{da1.consignee}}</td>
+        <td>{{da1.destination}}</td>
+        <td>{{da1.discharged}}</td>
+        <td>{{da1.rob}}</td>
+         <td>{{da1.discharge_progress}}
+            </td>
+                
+           </tr>
+         
+         
+        </tbody></table>
+         </div>
+<!--          <div ng-repeat="da in data track by $index">
+               
+                     
+                 
+            
+        <table class="table  table-hover bg-white" >
+    <thead>
+      <tr style='background-color:#5b9bd5;font-weight:600'>
+      
+        <th>Bill of Lading</th>
+          <th>Consignee</th>
+          <th>Destination</th>
+          <th>Discharged</th>
+          <th>R.O.B</th>
+          <th>Discharge Progress(%)</th>
+      </tr>
+    </thead>
+    <tbody >
+      <tr class='mtabletr' ng-repeat="da1 in da track by $index">
+
+        <td>{{da1.bill_lading}}</td>
+        <td>{{da1.consignee}}</td>
+        <td>{{da1.destination}}</td>
+        <td>{{da1.discharged}}</td>
+        <td>{{da1.rob}}</td>
+         <td>{{da1.discharge_progress}}
+            </td>
+      </tr>
+     
+      
+    </tbody>
+  </table>
+               </div>-->
     </ion-content>
 </ion-view>

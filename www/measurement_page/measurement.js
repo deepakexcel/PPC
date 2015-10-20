@@ -1,8 +1,8 @@
 angular.module('PCC.measurement', [])
 
 
-.controller('PCC.measureCtrl', function($scope,ajaxRequest,$stateParams,urlHelper,$ionicHistory) {
-    $scope.showdata=false;
+.controller('PCC.measureCtrl', function($scope,$rootScope,ajaxRequest,$stateParams,urlHelper,$ionicHistory) {
+    $rootScope.showdata=false;
     console.log($stateParams);
     $scope.bl_number=$stateParams.bl_number;
     $scope.mv=$stateParams.MV;

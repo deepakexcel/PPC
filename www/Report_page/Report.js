@@ -1,10 +1,10 @@
 'use strict';
 
 angular.module('PCC.Report', [])
-        .controller('PCC.ReportCtrl', function($scope, ajaxRequest, $ionicHistory, urlHelper, $ionicPopup) {
-            $scope.show = true;
-            $scope.show1 = true;
-            $scope.showdata=false;
+        .controller('PCC.ReportCtrl', function($scope,$rootScope, ajaxRequest, $ionicHistory, urlHelper, $ionicPopup) {
+            $rootScope.show = true;
+            $rootScope.show1 = true;
+            $rootScope.showdata=false;
             var self = this;
 
             self.reportList = function(date) {
@@ -44,7 +44,7 @@ angular.module('PCC.Report', [])
             };
 
             var popup = {};
-            $scope.search = function() {
+            $rootScope.search = function() {
                 popup = $ionicPopup.show({
                     scope: $scope,
                     templateUrl: 'Report_page/search.html'
@@ -52,6 +52,7 @@ angular.module('PCC.Report', [])
             };
             $scope.closepopup = function() {
                 popup.close();
+                 $rootScope.showdata=false;
             };
             $scope.Move = function(manifest_no, main_data) {
                 console.log(manifest_no);

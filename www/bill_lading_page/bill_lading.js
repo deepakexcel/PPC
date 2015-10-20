@@ -2,10 +2,10 @@
 angular.module('PCC.bill', [])
 
 
-.controller('PCC.BillCtrl', function($scope,ajaxRequest,$stateParams,urlHelper,$ionicHistory) {
-    $scope.show1=false;
-    $scope.show=false;
-    $scope.showdata=false;
+.controller('PCC.BillCtrl', function($scope,$rootScope,ajaxRequest,$stateParams,urlHelper,$ionicHistory) {
+    $rootScope.show1=false;
+    $rootScope.show=false;
+    $rootScope.showdata=false;
         console.log($stateParams);
     $scope.manifest_no=$stateParams.manifest_no;
     $scope.mv=$stateParams.MV;

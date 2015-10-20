@@ -93,7 +93,7 @@
     color:#fff;
     padding:  5px 0 0 75px;
     font-size: 1.3em;
-width:65%;
+    width:65%;
 
 }
 .headerright{
@@ -118,14 +118,14 @@ width:65%;
     font-size: 1.3em;
 }
 .mdate {
-width:60%;
+    width:60%;
 }
 .bright {
     font-size: 24px;
     padding: 0px 20px 0 0;
 }
 i.search {
-  font-size: 1.8em;
+    font-size: 1.8em;
     padding:0px 20px 0 0;
 }
 i.icon.ion-android-sync.refresh {
@@ -223,7 +223,7 @@ i.space.page2.ng-binding {
     font-weight: 600;
     width: 94%;
     margin: 0 auto;
-    padding: 8px 0px 8px 0;
+    padding: 6px 0px 0px 0;
 }
 .blno {
     /*    float: left;
@@ -310,9 +310,9 @@ i.space.page2.ng-binding {
     font-size: 20px;
     vertical-align: -10%;
 }
-nav ul.nav li a {
+/*nav ul.nav li a {
     line-height:0px;
-}
+}*/
 .mn{
     padding: 15px 0 0 0;
 }
@@ -340,7 +340,22 @@ img.ab {
     font-size: 1.4em;
     opacity: 0.5;
     padding: 5px 0px 8px 15px;
-    box-shadow: 0px 0px 1px 1px #BDBBBB;
+    box-shadow: 0px 0px 5px 1px #131111;
+}
+.mid1 {
+    width: 96%;
+    margin: 0 auto;
+    padding: 28px 0 90px 0;
+}
+.bt1 {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+.bt2 {
+    float: right;
+    width: 50%;
+    text-align: center;
 }
 .mid {
     margin: 8px 15px 0 15px;
@@ -354,7 +369,7 @@ img.ab {
     text-align: right;
 }
 .mypad{
-        border-radius: 5px;
+    border-radius: 5px;
     padding: 8px 0px 28px 6px;  
 }
 .iconside {
@@ -373,7 +388,7 @@ i.makebtn {
     font-size: 1.3em;
     padding: 7px 10px 9px 10px;
     border-radius: 4px;
-    
+
 }
 i.makebtn1 {
     background-color: #fcfcdd;
@@ -403,7 +418,7 @@ i.makebtn1 {
 }
 input[type="text"], input[type="password"],input[type="number"]{
     border: 1px solid #ccc;
-    
+
 }
 .full1 {
     width: 94%;
@@ -418,7 +433,7 @@ input[type="text"], input[type="password"],input[type="number"]{
     padding: 6px 12px 0 0;
 }
 .md-select-label{
-        min-width: 150px !important;
+    min-width: 150px !important;
 }
 i.myactivity {
     font-size: 1.2em;
@@ -437,25 +452,25 @@ i.myactivity {
     padding-right:10px;
 }
 .ax{
-  
+
     min-width: 150px;
 
 }
 .ax1{
-  
+
     min-width: 167px;
 
 }
 .datetimepicker {
-   
+
     width: 450px !important;
 }
 .MYASSIGN{
-     text-align:right;
+    text-align:right;
     padding-right:10px;
 }
 .myarea{
-   margin-left:20% !important   ;
+    margin-left:20% !important   ;
 }
 .mm{
     margin-left:65%;
@@ -484,11 +499,11 @@ i.myactivity {
 .backc{
     background-color: #6699ff;
     color: #fff;
-  
+
 }
 .backcol{
     box-shadow: 0px 1px 0px 0px #BDBDBD;
-    }
+}
 .topd2 {
     width: 97%;
     margin: 0 auto;
@@ -496,9 +511,12 @@ i.myactivity {
 }
 .mv {
     float: left;
+    width:60%
 }
 .portLoading {
-    float: right;
+float: right;
+width: 40%;
+text-align: right;
 }
 .pkg {
     float: left;
@@ -563,9 +581,100 @@ input.mb-input-field.ng-pristine.ng-valid.ng-touched {
 .row.ml1 {
     margin-top: 18px;
 }
+.barchart{
+    margin-top:20px;
+}
+.piechart{
+    margin-top:20px;
+}
+.tit{
+    text-align: center;
+    margin-bottom: 15px;
+    opacity: 0.7;
+}
+/*table.table.table-hover.bg-white {
+    max-width: 90%;
+    margin-left: 9%;
+}
+.mtabletr{
+    text-align:center;
+}
+th{
+    text-align:center;
+}*/
+.date12 {
+    float: left;
+    width: 18%;
+}   
+.day12 {
+    float: left;
+    width: 15%;
+    /* text-align: center; */
+}
+.starttime12 {
+    float: left;
+    width: 24%;
+    /* text-align: center; */
+}
+.endtime12 {
+    float: left;
+    width: 17%;
+    text-align: center;
+}
+.nogangs12 {
+float: right;
+width: 25%;
+text-align: right;
+}
+.line1234 {
+    background-color: #fff;
+    margin: -13px 0 0;
+    padding: 0.5px;
+    width: 97%;
+    margin-left: 1.5%;
+}
 
+.xn{
+    font-size:1.3em;
+        padding: 5px 0 0px 0px;
+}
+.xn1{
+    padding: 2px 0 4px 0px !important;
+}
+.xn2{
+    padding:0px !important;
+}
+table, th, td {
+    border: 1px solid rgb(16, 15, 15);
+    border-collapse: collapse;
+   
+}
+th {
+    text-align: center;
+}
+td {
+    text-align: center;
+}
+table#tab {
+    width: 86%;
+    margin-left: 13%;
+    text-align: center;
+}
+#th2{
+    font-weight:600;
+}
+tr#tr2 {
+    background-color: #fff;
+}
 
-
+tr#tr1 {
+    background-color: #5b9bd5;
+}
+.dropdown-menu.abc {
+    position: absolute;
+    top: 100%;
+    left: -143px;
+}
 
 
 
@@ -659,9 +768,8 @@ input.mb-input-field.ng-pristine.ng-valid.ng-touched {
     }*/
     .folded{
         font-size:0px !important;
+       
     }
-    .folded{
-        padding:0px !important;
-    }
+
 
 }

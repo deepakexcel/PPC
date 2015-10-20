@@ -1,0 +1,47 @@
+{  
+    "display_data":[{
+           "bill_lading":"BL4990850",
+           "consignee":"Pacific international Drilling",
+           "destination":"FOT-CSA",
+           "discharged":"72",
+           "rob":"96",
+           "discharge_progress":"43"
+          
+     },
+     {
+           "bill_lading":"BL4990860",
+           "consignee":"Pacific international Drilling",
+           "destination":"FOT-CSA",
+           "discharged":"0",
+           "rob":"36",
+           "discharge_progress":"0"
+          
+     },
+     {
+           "bill_lading":"BL0350120",
+           "consignee":"Vallorec Nigeria Ltd",
+           "destination":"FLT-VON-CP",
+           "discharged":"2720",
+           "rob":"6800",
+           "discharge_progress":"29"
+          
+     },
+     {
+           "bill_lading":"BL1500060",
+           "consignee":"Aveon Offshore Ltd.",
+           "destination":"WACT",
+           "discharged":"36",
+           "rob":"0",
+           "discharge_progress":"100"
+          
+     },
+     {
+           "bill_lading":"BL1501234",
+           "consignee":"Mobil Producing Nigeria",
+           "destination":"Fot-MPN-CP",
+           "discharged":"73",
+           "rob":"21",
+           "discharge_progress":"78"
+          
+     }]
+}

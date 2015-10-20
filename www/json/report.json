@@ -8,8 +8,8 @@
            "manifest_type":"Import",
             "manifest_no":"MF15000334",
            "ETA":"20.04.2015",
-           "created_at":"",
-           "updated_at":""
+           "created_at":"1445255747161",
+           "updated_at":"1445255747161"
            
    },{
            "agent":"Red Transport",
@@ -20,8 +20,8 @@
            "manifest_type":"Shifting",
            "manifest_no":"MF15000374",
            "ETA":"18.02.2015",
-           "created_at":"",
-           "updated_at":""
+           "created_at":"1445255747161",
+           "updated_at":"1445255747161"
            
    },{
            "agent":"MGM",
@@ -32,8 +32,8 @@
            "manifest_type":"Export",
            "manifest_no":"MF15000443",
            "ETA":"15.02.2015",
-           "created_at":"",
-           "updated_at":""
+           "created_at":"1445255747161",
+           "updated_at":"1445255747161"
          
    }
         
